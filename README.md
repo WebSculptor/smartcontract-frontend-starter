@@ -1,8 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) starter project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for interacting with smart contract.
 
 ## Getting Started
 
-First, run the development server:
+Create a .env.local or .env file and replace these variables:
+
+```bash
+NEXT_PUBLIC_W3M_PROJECT_ID="your-web3-modal-project-id"
+
+# ? NEXT AUTH
+NEXTAUTH_URL="your-localhost-url"
+NEXTAUTH_SECRET="a-secure-secret-for-next-auth"
+SESSION_SECRET="a-strong-secret-for-session"
+
+# ? CONTRACT ADDRESS
+NEXT_PUBLIC_CONTRACT_ADDRESS="your-deployed-contract-address"
+NEXT_PUBLIC_RPC_URL="your-ethereum-rpc-url"
+
+```
+
+You can get your wallet connect project id [here](https://cloud.walletconnect.com/sign-in).
+
+Once you're done, run the development server:
 
 ```bash
 npm run dev
@@ -28,9 +46,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
