@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) starter project bootstrapped with [`cre
 
 ## Getting Started
 
-Create a .env.local or .env file and replace these variables:
+Create a `.env.local` or `.env` file and replace these variables:
 
 ```bash
 NEXT_PUBLIC_W3M_PROJECT_ID="your-web3-modal-project-id"
