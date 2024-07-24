@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 
 import { cookieToInitialState } from "wagmi";
+import { Analytics } from "@vercel/analytics/react";
 
 import "@/styles/globals.css";
 import { siteConfig, config } from "@/config";
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: Readonly<ILayout>) {
           "min-h-dvh font-sans antialiased flex flex-col flex-1",
           fontSans.variable
         )}>
+        <Analytics />
         <Web3ModalProvider initialState={initialState}>
           <Header />
           <main className="flex-1">{children}</main>
